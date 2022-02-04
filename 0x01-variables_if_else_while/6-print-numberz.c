@@ -1,18 +1,17 @@
-nclude <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 
 /**
- *  * main - Print numbers
- *   *
- *    * Return: (0) success
- *     */
+ * main - Print numbers
+ *
+ * Return: (0) success
+ */
+
 int main(void)
 {
 	int n;
-	for (n = 0; n <= 9; n++)
+	for (n = 48; n < 58; n++)
 	{
-		printf("%i", n);
+		putchar(n);
 	}
 		putchar('\n');
 
