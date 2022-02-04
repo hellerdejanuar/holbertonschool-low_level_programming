@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - generates random number and prints text according to value
+ *
+ * Return values
+ * Return: (0) success
+ */
+
 int main(void)
 {
 	int n;
@@ -12,7 +17,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-		printf("%i is negative \n", n);
+		printf("%i is negative\n", n);
 	}
 	else if (n > 0)
 	{
