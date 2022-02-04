@@ -1,13 +1,13 @@
-nclude <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 
 /**
  * main - Print numbers
  *
  * Return: (0) success
 */
+
 int main(void)
+
 {
 	int n;
 	for (n = 0; n <= 9; n++)
