@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Writes alphabet
+ * main - prints alphabet in this order a-z A-Z
  *
  * Return values
  * Return: (0) success
@@ -10,13 +10,17 @@
 int main(void)
 {
 	char c;
-	char nl = '\n';
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
+	
+	for (c= 'A'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
 
-	putchar(nl);
+	putchar(10);
 	return (0);
 }
