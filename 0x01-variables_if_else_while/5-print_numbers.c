@@ -3,10 +3,10 @@ nclude <stdio.h>
 #include <time.h>
 
 /**
- *  * main - Print numbers
- *   *
- *    * Return: (0) success
- *     */
+ * main - Print numbers
+ *
+ * Return: (0) success
+*/
 int main(void)
 {
 	int n;
