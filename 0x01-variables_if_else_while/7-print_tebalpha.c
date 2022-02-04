@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Print numbers
+ * main - Print reverse alphabet
  *
  * Return: (0) success
-*/
+ */
 
 int main(void)
 
 {
-	int n;
-	
-	for (n = 0; n <= 9; n++)
+	char c;
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		printf("%i", n);
+		putchar(c);
 	}
 		putchar('\n');
 
