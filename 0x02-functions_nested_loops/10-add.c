@@ -2,6 +2,9 @@
 
 /**
  * add - adds a to b
+ * @a: number 1
+ * @b: number 2
+ * return: numbers 1 and 2 added together
  */
 
 int add(int a, int b)
@@ -11,6 +14,3 @@ int add(int a, int b)
 	n = a + b;
 	return (n);
 }
-
-
-
