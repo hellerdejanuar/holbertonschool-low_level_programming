@@ -1,0 +1,34 @@
+#include "main.h"
+
+/**
+ * void jack_bauer - prints all numbers from 00:00 to 23:59 in sequence
+ *
+ */
+
+void jack_bauer(void)
+{
+	char hx;
+	char xh;
+	char mx;
+	char xm;
+
+	for(hx = '0'; hx <= '2'; hx++)
+	{
+		_putchar(hx);
+		for(xh = '0'; xh <= '3'; xh++)
+		{
+			_putchar(xh);
+			for(mx = '0'; mx <= '5'; mx++)
+			{
+				_putchar(':');
+				_putchar(mx);
+				for(xm = '0'; xm <= '9'; xm++)
+				{
+					_putchar(xm);
+					_putchar('\n');
+				}
+			}
+		}
+		
+	}
+}
