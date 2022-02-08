@@ -24,9 +24,11 @@ void times_table(void)
 				_putchar(firstD + '0');
 				_putchar(secD + '0');
 			}
-			else
+			else 
+			{
 				_putchar(' ');
 				_putchar(x + '0');
+			}
 			if (col < 9)
 			{
 				_putchar(',');
