@@ -10,10 +10,15 @@ void jack_bauer(void)
 	char xh;
 	char mx;
 	char xm;
+	char hmax;
 
 	for (hx = '0'; hx <= '2'; hx++)
 	{
-		for (xh = '0'; xh <= '3'; xh++)
+		if (hx == '2')
+			hmax = '3';
+		else
+			hmax = '9';
+		for (xh = '0'; xh <= hmax; xh++)
 		{
 			for (mx = '0'; mx <= '5'; mx++)
 			{
@@ -28,6 +33,5 @@ void jack_bauer(void)
 				}
 			}
 		}
-
 	}
 }
