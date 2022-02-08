@@ -11,7 +11,7 @@ void times_table(void)
 	int firstD;
 	int secD;
 	int x;
-		
+
 	for (row = 0; row <= 9; row++)
 	{
 		for (col = 0; col <= 9; col++)
@@ -24,7 +24,7 @@ void times_table(void)
 				_putchar(firstD + '0');
 				_putchar(secD + '0');
 			}
-			else 
+			else
 				_putchar(x + '0');
 			if (col < 9)
 			{
