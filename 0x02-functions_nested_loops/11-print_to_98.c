@@ -2,12 +2,8 @@
 #include "stdio.h"
 
 /**
- * add - adds a to b
- * @a: number 1
- * @b: number 2
- *
- * Return Messages
- * Return: n numbers a and b added together
+ * print_to_98 - adds a to b
+ * @n: number input
  */
 
 void print_to_98(int n)
