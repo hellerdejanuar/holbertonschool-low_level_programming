@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * sumMult - print sum of all multiples of 3 and 5 lower than 1024
- * Return: sum
+ * main - print sum of all multiples of 3 and 5 lower than 1024
  */
-int sumMult(void)
+void main(void)
 {
 	int max = 1024;
 	int a = 3;
@@ -20,16 +19,5 @@ int sumMult(void)
 		sum += x;
 		}
 	}
-	return (sum);
-}
-
-/**
- * main - print
- * Return: 0
- */
-int main(void)
-{
-	printf("%i\n", sumMult());
-
-	return (0);
+	printf("%i\n", sum);
 }
