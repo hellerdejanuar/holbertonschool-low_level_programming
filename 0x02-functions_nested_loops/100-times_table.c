@@ -3,6 +3,8 @@
 
 int main(void)
 {
+	int n;
+
 	n = log(100);
 return (n);
 }
