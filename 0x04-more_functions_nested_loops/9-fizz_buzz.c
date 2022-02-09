@@ -3,7 +3,7 @@
 
 /**
  * main - prints fizz or buzz based on input
- * 
+ *
  * Return: 0 success
  */
 int main(void)
