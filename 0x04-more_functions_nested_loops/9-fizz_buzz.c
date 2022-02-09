@@ -21,7 +21,8 @@ int main(void)
 		if (a % 3 != 0 && a % 5 != 0)
 			printf("%i", a);
 
-		putchar(' ');
+		if (a < 100)
+			putchar(' ');
 	}
 	putchar('\n');
 	return (0);
