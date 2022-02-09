@@ -12,27 +12,26 @@
 
 void print_to_98(int n)
 {
-		int cn;
-		int targ = 98;
+	int cn;
+	int targ = 98;
 
-		if (n < targ)
+	if (n < targ)
+	{
+		for (cn = n; cn < targ; cn++)
 		{
-			for (cn = n; cn < targ; cn++)
-				{
-					printf("%i, ", cn);
-				}
+			printf("%i, ", cn);
 		}
+	}
+	else if (n > targ)
+	{
+		for (cn = n; cn > targ; cn--)
+		{
+			printf("%i, ", cn);
+		}
+	}
 
-		else if (n > targ)
-		{
-			for (cn = n; cn > targ; cn--)
-				{
-					printf("%i, ", cn);
-				}
-		}
-
-		if (n == 98 || cn == 98)
-		{
-			printf("98\n");
-		}
+	if (n == 98 || cn == 98)
+	{
+		printf("98\n");
+	}
 }
