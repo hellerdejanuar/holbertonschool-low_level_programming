@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _isupper - checks if input is in range A to Z
+ * _isdigit - checks if input is in range 0 to 0
  * @c: input to be checked
  * Return: 1 True 0 False
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= '0' && c <= '0')
 		return (1);
 	else
 		return (0);
