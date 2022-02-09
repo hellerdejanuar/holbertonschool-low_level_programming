@@ -1,10 +1,14 @@
 #include "main.h"
 #include <math.h>
+#include <stdio.h>
 
 /**
- * times_table - prints all numbers times all others from 0 to 10
+ * print_times_table - prints times table according to args
+ *
+ * @n: number input
  */
 
+/*
 void print_times_table(int n)
 {
 	int col;
@@ -12,11 +16,6 @@ void print_times_table(int n)
 	int firstD;
 	int secD;
 	int x;
-	int intlen;
-
-	secD = n;
-	intlen = 55;
-	x = intlen * 2;
 
 	for (row = 0; row <= 9; row++)
 	{
@@ -45,8 +44,30 @@ void print_times_table(int n)
 			else
 			{
 				_putchar('\n');
-				intlen = log(10);
 			}
 		}
 	}
+}
+*/
+
+char _itostr (int n)
+{
+	int intlen;
+	char* intstr = "";
+	int lastD;
+	char lastChar;
+	int x;
+	
+	if(n > 0)
+	{
+		intlen = (log(n) / 1) + 1;
+		for (x = 0; x <= intlen; x++)
+		{
+			lastD = n % 10;
+			lastChar = (char) lastD + '0';
+			intstr = intstr + lastChar;
+			printf("%s", intstr);
+		}
+	}
+	return (0);
 }
