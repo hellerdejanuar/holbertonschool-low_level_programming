@@ -3,6 +3,8 @@
 
 /**
  * main - prints fizz or buzz based on input
+ * 
+ * Return: 0 success
  */
 int main(void)
 {
@@ -15,7 +17,7 @@ int main(void)
 
 		if (a % 5 == 0)
 			printf("Buzz");
-		
+
 		if (a % 3 != 0 && a % 5 != 0)
 			printf("%i", a);
 
