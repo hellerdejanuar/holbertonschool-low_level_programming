@@ -26,7 +26,8 @@ void more_numbers(void)
 /**
  * rev - reverses int
  * @a: int input
- * return: reversed int
+ *
+ * Return: rev reversed int
  */
 
 int rev(int a)
