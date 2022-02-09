@@ -44,8 +44,3 @@ void times_table(void)
 		}
 	}
 }
-
-char _itostr(int n)
-{
-	
-}
