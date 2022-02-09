@@ -7,15 +7,16 @@
 void more_numbers(void)
 {
 	int times, x, rem, rvNum, nextD;
-	for(times = 0; times < 10; times++)
+
+	for (times = 0; times < 10; times++)
 	{
-		for(x = 0; x <= 14; x++)
+		for (x = 0; x <= 14; x++)
 		{
-			rvNum = rev(x); 
+			rvNum = rev(x);
 			for (rem = rvNum; rem != 0; rem /= 10)
 			{
 				nextD = rem % 10;
-				_putchar(nextD +'0');
+				_putchar(nextD + '0');
 			}
 		}
 		_putchar('\n');
