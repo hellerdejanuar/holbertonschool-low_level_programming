@@ -2,13 +2,15 @@
 
 
 /**
+ * main - prints 50 fibonacci numbers
  *
+ * Return: 0 success
  */
-void main(void)
+int main(void)
 {
 	long unsigned a, b, s, cn;
 
-	for (a = 0, b = 1, cn = 0; cn < 50; cn++, a = b, b = s)
+	for (a = 0, b = 1, cn = 0; cn <= 50; cn++, a = b, b = s)
 	{
 		s = a + b;
 		printf("%lu", s);
@@ -19,9 +21,9 @@ void main(void)
 		}
 		else
 		{
-			printf("%lu", s);
 			printf("\n");
 		}
 		
 	}
+	return (0);
 }
