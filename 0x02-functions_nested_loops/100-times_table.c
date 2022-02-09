@@ -14,6 +14,9 @@ void print_times_table(int n)
 	int x;
 	int intlen;
 
+	secD = n;
+	intlen = 55;
+
 	for (row = 0; row <= 9; row++)
 	{
 		for (col = 0; col <= 9; col++)
