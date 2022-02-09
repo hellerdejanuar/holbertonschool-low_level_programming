@@ -5,7 +5,7 @@
  * times_table - prints all numbers times all others from 0 to 10
  */
 
-void print_times_table(void)
+void print_times_table(int n)
 {
 	int col;
 	int row;
