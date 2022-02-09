@@ -15,7 +15,7 @@ int main(void)
 		s = a + b;
 		printf("%lu", s);
 
-		if (cn != 50)
+		if (cn != 49)
 		{
 			printf(", ");
 		}
