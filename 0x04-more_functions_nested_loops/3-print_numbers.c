@@ -1,5 +1,5 @@
 #include "main.h"
-i
+
 /**
  * print_numbers - print numbers from 0 to 10
  */
