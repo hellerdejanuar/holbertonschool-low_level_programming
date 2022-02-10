@@ -1,9 +1,9 @@
 #include "main.h"
-
+i
 /**
- * print_numbers - Print numbers from 0 to 10
+ * print_numbers - print numbers from 0 to 10
  */
-int print_numbers(void)
+void print_numbers(void)
 {
 	int n = 48;
 
