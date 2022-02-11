@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strlen - returns length of string
- * @str: string to be evaluated
+ * _puts - ptrint string
+ * @str: string to be printed
  */
-void _strlen(char *str)
+void _puts(char *str)
 {
 	int a;
 
