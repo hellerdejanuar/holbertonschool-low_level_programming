@@ -9,5 +9,5 @@
 int _strlen(char *s)
 {
 	const char a = *s;
-	return (strleng(a));
+	return (strlen(a));
 }
