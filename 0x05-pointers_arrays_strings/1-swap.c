@@ -2,7 +2,8 @@
 
 /**
  * swap_int - swaps the value of to int variables
- * @a,b: ints to be swapped
+ * @a: int a to be swapped
+ * @b: int b to be swapped
  */
 
 void swap_int(int *a, int *b)
