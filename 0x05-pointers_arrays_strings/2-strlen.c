@@ -8,6 +8,6 @@
  */
 int _strlen(char *s)
 {
-	const char a = *s;
-	return (strlen(a));
+	const char *a = *s;
+	return (strlen(*a));
 }
