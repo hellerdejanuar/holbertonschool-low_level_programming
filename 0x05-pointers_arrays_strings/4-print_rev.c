@@ -7,11 +7,25 @@
 void print_rev(char *s)
 {
 	int a;
-	size_t size = _strlen(s);
+	int size = _strlen(s);
 
 	for (a = size; a >= 0; a--)
 	{
 		_putchar(s[a]);
 	}
 	_putchar('\n');
+}
+
+/**
+ * _strlen - returns length of string
+ * @s: string to be evaluated
+ * Return: string length
+ */
+int _strlen(char *s)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+	{}
+	return (a);
 }
