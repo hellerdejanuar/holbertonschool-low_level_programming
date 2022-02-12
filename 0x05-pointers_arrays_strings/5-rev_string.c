@@ -8,12 +8,13 @@ void rev_string(char *s)
 {
 	int a, b;
 	int size = _strlen(s);
-	char str[];
+	char str[size];
 
-	for (a = size - 1, b = 0; a >= 0; a--, b++)
+	for (a = size - 1, b = 0; a != 0; a--, b++)
 	{
-		s[b] = str[a];
+		str[b] = s[a];
 	}
+	str[size - 1] = '\0';
 	s = str;
 }
 
