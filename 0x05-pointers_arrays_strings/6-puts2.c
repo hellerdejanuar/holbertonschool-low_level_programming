@@ -2,13 +2,13 @@
 
 /**
  * puts2 - ptrints every other character of string
- * @s: string to be printed backwards
+ * @str: string to be printed
  */
 void puts2(char *str)
 {
 	int a;
 
-	for (a = 0; str[a] != '\0'; a += 2)
+	for (a = 0; a < 100 ; a += 1)
 	{
 		_putchar(str[a]);
 	}
