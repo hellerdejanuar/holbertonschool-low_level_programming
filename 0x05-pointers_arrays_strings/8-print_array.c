@@ -19,7 +19,7 @@ void print_array(int *a, int n)
 	for (cn = 0; cn < size && cn < n; cn++)
 	{
 		printf("%i", a[cn]);
-		if (cn < size -1 || cn < n -1)
+		if (cn < size -1 && cn < n -1)
 			printf(", ");
 	}
 	_putchar('\n');
