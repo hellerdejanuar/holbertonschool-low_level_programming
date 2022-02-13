@@ -6,30 +6,16 @@
  */
 void rev_string(char *s)
 {
-	int a, b;
-	int size = _strlen(s);
-	char *str;
+	int a, b = 0;
+	char tmp;
 
-	str = s;
-
-	for (b = 0, a = size; s[b] != '\0' ; a--, b++)
+	while (s[b] != '\0')
+		b++;
+	b--;
+	for (a = 0; a < b; b--, a++)
 	{
-		str[a] = s[b];
+		tmp = s[a];
+		s[a] = s[b];
+		s[b] = tmp;
 	}
-
-	s = str;
-}
-
-/**
- * _strlen - returns length of string
- * @s: string to be evaluated
- * Return: string length
- */
-int _strlen(char *s)
-{
-	int a;
-
-	for (a = 0; s[a] != '\0'; a++)
-	{}
-	return (a);
 }
