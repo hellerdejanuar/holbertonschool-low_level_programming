@@ -2,10 +2,9 @@
 
 /**
  * _atoi - convert to a int
- * @s:string
- * Return:int
+ * @s: string
+ * Return: int
  */
-
 int _atoi(char *s)
 {
 int i, j, n, x;
