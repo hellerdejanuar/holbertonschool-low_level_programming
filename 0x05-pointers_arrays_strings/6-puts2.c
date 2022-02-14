@@ -8,9 +8,13 @@ void puts2(char *str)
 {
 	int a;
 
-	for (a = 0; str[a] != '\0' ; a += 2)
+	while (str[a] != '\0')
+		a++
+
+	for (a = 0; b <= ; a++)
 	{
-		_putchar(str[a]);
+		if (2 % a == 0)
+			_putchar(str[a]);
 	}
 	_putchar('\n');
 }
