@@ -8,7 +8,7 @@
  * positive if it's greater.
  */
 
-char *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int s1sz, s2sz;
 
