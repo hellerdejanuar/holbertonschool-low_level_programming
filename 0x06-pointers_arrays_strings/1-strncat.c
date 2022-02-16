@@ -1,28 +1,31 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strcat - concatenates strings. src after dest
+ * _strncat - concatenates strings. src after dest. n sets limit
+ * @dest: destination
+ * @src: source
+ * @n: number of chars to be printed maxs
+ * Return: concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int sizeDest, sizeSrc, a;
-	
+
 	sizeSrc = _strlen(src);
 	sizeDest = _strlen(dest);
-	
-	for (a = 0; a < sizeSrc && a < n; a++)
+
+	for (a = 0; a <= sizeSrc && a <= n; a++)
 	{
 		dest[sizeDest + a] = src[a];
 	}
-	if (a == sizeSrc)
-		dest[sizeDest + a] = '\0';
 
 	return (dest);
 }
 
 /**
  * _strlen - takes a string and outputs the number of chars
+ * @str: string to be counted
+ * Return: number of chars
  */
 int _strlen(char *str)
 {
