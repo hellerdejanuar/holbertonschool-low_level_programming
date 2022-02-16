@@ -5,6 +5,8 @@
  */
 char *string_toupper(char *str)
 {
+	int n;
+
 	while (str[n] != '\0')
 	{
 		if (str[n] >= 'a' && str[n] <= 'z')
