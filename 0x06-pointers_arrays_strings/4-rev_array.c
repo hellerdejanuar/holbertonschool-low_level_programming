@@ -4,6 +4,7 @@
 /**
  * reverse_array - reverses array of ints
  * @a: array to be reversed
+ * @n: number of elements to be printed
  */
 void reverse_array(int *a, int n)
 {
