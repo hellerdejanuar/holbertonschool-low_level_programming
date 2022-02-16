@@ -1,6 +1,6 @@
 #include "main.h"
 
-char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
 {
 	int sizeDest, sizeSrc, a;
 	char *aux;
@@ -8,7 +8,7 @@ char *_strcat(char *dest, char *src);
 	sizeSrc = str(src);
 	sizeDest = str(dest);
 	
-	for (a = 0, a < sizeDest + sizeSrc; a++)
+	for (a = 0, a < sizeDest + sizeSrc && a < n; a++)
 		aux[a + sizeDest - 1] = src[a];
 
 	dest = aux;
@@ -23,7 +23,7 @@ int _strlen(char *str)
 	int cn;
 
 	while (str[cn] != '\0')
-		cn++;
+		cn++
 
 	return (cn);
 }
