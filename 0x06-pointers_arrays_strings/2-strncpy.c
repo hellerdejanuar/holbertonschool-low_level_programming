@@ -13,9 +13,13 @@ char *_strncpy(char *dest, char *src, int n)
 
 	sizeSrc = _strlen(src);
 
-	for (a = 0; a <= sizeSrc && a < n; a++)
+	for (a = 0; a < n; a++)
 	{
-		dest[a] = src[a];
+		if (a <= sizeSrc)
+			dest[a] = src[a];
+
+		else
+			dest[a] = '\0';
 	}
 
 	return (dest);
