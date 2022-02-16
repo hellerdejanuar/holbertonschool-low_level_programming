@@ -9,10 +9,9 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int sizeDest, sizeSrc, a;
+	int sizeSrc, a;
 
 	sizeSrc = _strlen(src);
-	sizeDest = _strlen(dest);
 
 	for (a = 0; a <= sizeSrc && a < n; a++)
 	{
