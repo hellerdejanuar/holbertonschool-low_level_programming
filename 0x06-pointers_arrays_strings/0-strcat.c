@@ -1,17 +1,19 @@
 #include "main.h"
 
-char *_strcat(char *dest, char *src);
+/**
+ * _strcat - concatenates src after dest
+ */
+char *_strcat(char *dest, char *src)
 {
 	int sizeDest, sizeSrc, a;
-	char *aux;
 
-	sizeSrc = str(src);
-	sizeDest = str(dest);
+	sizeSrc = _strlen(src);
+	sizeDest = _strlen(dest);
 	
-	for (a = 0, a < sizeDest + sizeSrc; a++)
-		aux[a + sizeDest - 1] = src[a];
+	for (a = 0; a < sizeDest + sizeSrc; a++)
+		dest[a + sizeDest - 1] = src[a];
 
-	dest = aux;
+	return(dest);
 }
 
 /**
