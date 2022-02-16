@@ -1,33 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * reverse_array - reverses array of ints
- * @s: string to be reversed
+ * @a: array to be reversed
  */
-void rev_string(int *s, int n)
+void reverse_array(int *a, int n)
 {
-	int a, b = 0;
+	int cn1;
 	int tmp;
 
-	while (s[b] != '\0')
-		b++;
-
-	b--;
-	for (a = 0; a < b && a < n; b--, a++)
+	for (cn1 = 0; cn1 < n / 2; cn1++)
 	{
-		tmp = s[a];
-		s[a] = s[b];
-		s[b] = tmp;
+		tmp = a[cn1];
+		a[cn1] = a[n - cn1 - 1];
+		a[n - cn1 - 1] = tmp;
 	}
 }
 
-/**
- *  * _strlen - takes a string and outputs the number of chars
- *   * @str: string to be counted
- *    * Return: number of chars
- *     */
-int _arrlen(int *arr)
-{
-	    int cn = 0;
-
-		    while (str[cn] != '\0')
