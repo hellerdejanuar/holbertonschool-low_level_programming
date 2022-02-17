@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int rem, rvNum, nextD;
+	unsigned int rem, rvNum, nextD;
 
 	if (n == 0)
 		_putchar('0');
