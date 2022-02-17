@@ -7,11 +7,11 @@
  */
 char *leet(char *str)
 {
-	int n = 0, x;
+	int n, x;
 	char lat[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char leet[] = {'4', '3', '0', '7', '1'};
 
-	for (n = 1; str[n] != '\0'; n++)
+	for (n = 0; str[n] != '\0'; n++)
 	{
 		for (x = 0; x < 13; x++)
 		{
