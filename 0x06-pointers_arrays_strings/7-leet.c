@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * cap_string - changes first word's lowercase letters to uppercase
+ * leet - encodes text into leet
  * @str: string to be modified
- * Return: string with all uppers
+ * Return: string with leet encoding
  */
-char *cap_string(char *str)
+char *leet(char *str)
 {
 	int n = 0, x;
 	char lat[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char leet[] = {4, 3, 0, 7, 1}
+	char leet[] = {'4', '3', '0', '7', '1'};
 
 	for (n = 1; str[n] != '\0'; n++)
 	{
