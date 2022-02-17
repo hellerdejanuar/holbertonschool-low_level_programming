@@ -14,20 +14,19 @@ char *cap_string(char *str)
 	if (str[n] >= 'a' && str[n] <= 'z')
 		str[n] = str[n] - 32;
 
-	else
-		for (n = 1; str[n] != '\0'; n++)
+	for (n = 1; str[n] != '\0'; n++)
+	{
+		for (x = 0; x < 13; x++)
 		{
-			for (x = 0; x < 13; x++)
+			if (str[n - 1] == sepr[x])
 			{
-				if (str[n - 1] == sepr[x])
+				if (str[n] >= 'a' && str[n] <= 'z')
 				{
-					if (str[n] >= 'a' && str[n] <= 'z')
-					{
-						str[n] = str[n] - 32;
-					}
+					str[n] = str[n] - 32;
 				}
 			}
 		}
+	}
 
 	return (str);
 }
