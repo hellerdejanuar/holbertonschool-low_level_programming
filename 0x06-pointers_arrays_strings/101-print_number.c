@@ -9,13 +9,33 @@ void print_number(int n)
 {
 	int rem, rvNum, nextD;
 
-	rvNum = rev(n);
-	for (rem = rvNum; rem != 0; rem /= 10)
+	if (n == 0)
+		_putchar('0');
+
+	else
 	{
-		nextD = rem % 10;
-		_putchar(nextD + '0');
+		if (n > 0)
+		{
+			rvNum = rev(n);
+			for (rem = rvNum; rem != 0; rem /= 10)
+			{
+				nextD = rem % 10;
+				_putchar(nextD + '0');
+			}
+		}
+		else if (n < 0)
+		{
+			n = n * -1;
+			rvNum = rev(n);
+			_putchar('-');
+			for (rem = rvNum; rem != 0; rem /= 10)
+			{
+				nextD = rem % 10;
+				_putchar(nextD + '0');
+			}
+		}
+
 	}
-	_putchar('\n');
 }
 
 /**
@@ -43,17 +63,4 @@ int rev(int a)
 		}
 		return (rev);
 	}
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- **/
-
-int _putchar(char c)
-{
-		return (write(1, &c, 1));
 }
