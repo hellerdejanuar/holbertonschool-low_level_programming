@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * string_toupper - changes first word's lowercase letters to uppercase
+ * cap_string - changes first word's lowercase letters to uppercase
  * @str: string to be modified
  * Return: string with all uppers
  */
 char *cap_string(char *str)
 {
-	int n = 0,x;
-	char sepr[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int n = 0, x;
+	char sepr[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?',
+	   	'"', '(', ')', '{', '}', '\0'};
 
 	if (str[n] >= 'a' && str[n] <= 'z')
 		str[n] = str[n] - 32;
 
-	else 
+	else
 		for (n = 1; str[n] != '\0'; n++)
 		{
 			for (x = 0; x < 13; x++)
