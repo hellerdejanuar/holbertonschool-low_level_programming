@@ -7,7 +7,7 @@
  */
 char *rot13(char *str)
 {
-	int n, x;
+	int n, a;
 	char alph = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 	'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'}
 	char rot13 = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
