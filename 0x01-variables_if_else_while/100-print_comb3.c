@@ -3,7 +3,7 @@
 /**
  * main - prints combination of numbers
  */
-void main(void)
+int main(void)
 {
 	int i, j , x = 0;
 
@@ -27,4 +27,6 @@ void main(void)
 			}
 		}
 	}
+
+	return (0);
 }
