@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strspn - counts the amount of chars in s that are part from accept
@@ -18,7 +17,6 @@ unsigned int _strspn(char *s, char *accept)
 			if (*(s + i) == *(accept + j))
 			{
 				span++;
-				printf("char number %u: %c\n", i, *(s + i));
 				break;
 			}
 		}
