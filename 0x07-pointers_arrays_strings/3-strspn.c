@@ -11,14 +11,14 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int span = 0, i, j;
 
-	for(i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(accept + j))
 			{
 				span++;
-				printf("char number %u: %c\n",i , *(s + i));
+				printf("char number %u: %c\n", i, *(s + i));
 				break;
 			}
 		}
@@ -27,5 +27,5 @@ unsigned int _strspn(char *s, char *accept)
 			break;
 	}
 
-	return(span);
+	return (span);
 }
