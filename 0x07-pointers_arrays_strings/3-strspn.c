@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strspn - counts the amount of chars in s that are part from accept
@@ -12,11 +13,18 @@ unsigned int _strspn(char *s, char *accept)
 
 	for(i = 0; *(s + i) != '\0'; i++)
 	{
-		for (j = 0; *(s + i) != *(accept + j); j++)
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			span++;
-			continue;
+			if (*(s + i) == *(accept + j))
+			{
+				span++;
+				printf("char number %u: %c\n",i , *(s + i));
+				break;
+			}
 		}
+
+		if (span - 1 != i)
+			break;
 	}
 
 	return(span);
