@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 
-		if (span - 1 != i)
+		if (*(accept + j) ==  '\0')
 			break;
 	}
 
