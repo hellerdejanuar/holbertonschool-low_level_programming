@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 			return ('\0');
 	}
 
-	pos = (s + a + 1);
+	pos = (s + a);
 
 	return (pos);
 }
