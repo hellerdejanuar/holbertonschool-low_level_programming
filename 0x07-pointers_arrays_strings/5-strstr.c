@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strstr - returns pointer to first occurance of substring needle
@@ -9,7 +10,10 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
+	unsigned long int i, j;
+	
+	if (*needle == '\0')
+		return ('\0');
 
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
