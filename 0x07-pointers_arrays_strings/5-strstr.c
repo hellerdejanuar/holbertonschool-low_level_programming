@@ -7,7 +7,7 @@
  * @haystack: characters to be compared.
  * Return: pointer to first occurance of needle in haystack
  */
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 
