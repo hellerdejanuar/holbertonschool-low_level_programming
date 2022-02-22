@@ -7,7 +7,7 @@
  * @s: characters to be compared.
  * Return: pointer to first coincidence. Null if none
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
