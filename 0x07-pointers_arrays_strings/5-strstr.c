@@ -11,14 +11,11 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i, j;
 
-	if (*needle == '\0' || *haystack == '\0')
-		return ('\0');
-
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
 		if (*(haystack + i) == *(needle))
 		{
-			for (j = 1; ; j++)
+			for (j = 1; *(haystack + i + j) != '\0' ; j++)
 			{
 
 				if (*(needle + j) == '\0')
