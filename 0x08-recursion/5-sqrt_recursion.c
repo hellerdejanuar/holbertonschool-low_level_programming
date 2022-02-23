@@ -14,6 +14,7 @@ int _sqrt_recursion(int n)
  * iterate - iterates through ints untill it reaches n
  * @x: numbers to multiply together
  * @n: target number
+ * Return: -1 for non existent, x for natural square root
  */
 int iterate(int x, int n)
 {
