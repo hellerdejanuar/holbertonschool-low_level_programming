@@ -19,18 +19,18 @@ int is_prime_number(int n)
  * reaches a prime or end of list
  * @i: number being tested to be a divisor of n
  * @n: number to evaluate
- * Return: 1 for prime 0 otherwise -1 error
+ * Return: 1 for prime 0 otherwise
  */
 int iterate_prime(int i, int n)
 {
-	if (n % i == 0)
+	if (n % i != 0)
+		return (iterate_prime(i + 1, n));
+
+	else if (n % i == 0)
 		return (0);
 
 	else if (i >= n / 2)
 		return (1);
-
-	else if (n % i != 0)
-		return (iterate_prime(i + 1, n));
 
 	else
 		return (-1);
