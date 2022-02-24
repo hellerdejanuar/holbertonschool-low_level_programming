@@ -7,7 +7,7 @@
  */
 int is_palindrome(char *s)
 {
-	if (s == 'a')
+	if (*s == 'a')
 		return (0);
 
 	else
