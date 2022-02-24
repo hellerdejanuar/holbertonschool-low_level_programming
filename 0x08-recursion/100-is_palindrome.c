@@ -5,7 +5,7 @@
  * @n: number to be evaluated
  * Return: 1 if it is prime, 0 if it doesn't
  */
-int is_prime_number(int n)
+int is_palindrome(char *s)
 {
 	if (n <= 1)
 		return (0);
