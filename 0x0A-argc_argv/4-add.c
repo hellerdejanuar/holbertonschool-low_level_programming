@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 		y = atoi(argv[2]);
 
 		sum = x + y;
-		printf("%i \n", sum);
+		printf("%i\n", sum);
 		return (0);
 	}
 
-	printf("0 \n");
+	printf("0\n");
 	return (0);
 }
