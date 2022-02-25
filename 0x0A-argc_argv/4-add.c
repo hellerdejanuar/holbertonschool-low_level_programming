@@ -13,14 +13,17 @@ int main(int argc, char *argv[])
 	int sum, x, y, i, j;
 	char *str;
 
-	for (j = 0; *argv[j] < argc; i++)
+	for (j = 1; j < argc; j++)
 	{
 		str = argv[j];
 
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			if (str[i] < '0' || str[i] > '9')
+			{
+				printf("Error\n");
 				return (1);
+			}
 		}
 	}
 
