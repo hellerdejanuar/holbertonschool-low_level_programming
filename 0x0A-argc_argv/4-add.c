@@ -10,16 +10,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum, x, y, i;
+	int sum, x, y, i, j;
 	char *str;
 
 	for (j = 0; *argv[j] < argc; i++)
 	{
-		str = *argv[j];
+		str = argv[j];
 
-		for (i = 0; *str[i] != '\0'; i++)
+		for (i = 0; str[i] != '\0'; i++)
 		{
-			if (*str[i] < '0' || *str[i] > '9')
+			if (str[i] < '0' || str[i] > '9')
 				return (1);
 		}
 	}
@@ -29,8 +29,8 @@ int main(int argc, char *argv[])
 		x = atoi(argv[1]);
 		y = atoi(argv[2]);
 
-		mul = x * y;
-		printf("%i \n", mul);
+		sum = x + y;
+		printf("%i \n", sum);
 		return (0);
 	}
 
