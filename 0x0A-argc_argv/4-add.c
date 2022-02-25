@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - multiplies two numbers passed by the args
@@ -10,29 +11,27 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum, x, y, i, j;
+	int sum = 0, i, j;
 	char *str;
 
-	for (j = 1; j < argc; j++)
+	if (argc > 1)
 	{
-		str = argv[j];
-
-		for (i = 0; str[i] != '\0'; i++)
+		for (j = 1; j < argc; j++)
 		{
-			if (str[i] < '0' || str[i] > '9')
+			str = argv[j];
+
+			for (i = 0; str[i] != '\0'; i++)
 			{
-				printf("Error\n");
-				return (1);
+				if (isdigit(str[i]) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+
+		sum += atoi(argv[j]);
 		}
-	}
 
-	if (argc == 3)
-	{
-		x = atoi(argv[1]);
-		y = atoi(argv[2]);
-
-		sum = x + y;
 		printf("%i\n", sum);
 		return (0);
 	}
