@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
 		y = atoi(argv[2]);
 
 		mul = x * y;
-		printf("%i \n", mul);
+		printf("%i\n", mul);
 		return (0);
 	}
 
-	printf("\n");
+	printf("Error\n");
 	return (1);
 }
