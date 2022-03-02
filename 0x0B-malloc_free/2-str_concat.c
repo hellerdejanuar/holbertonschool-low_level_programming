@@ -29,8 +29,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		for (x = 0; x < i; x++)
 		{
-			printf("debug\n");
-		/*	ar[x] = s1[x];*/
+			ar[x] = s1[x];
 		}
 
 		for (x = 0; x < j; x++)
