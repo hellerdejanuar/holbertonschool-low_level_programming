@@ -10,15 +10,18 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i = 0, j = 0, x;
+	unsigned int i = 1, j = 1, x;
 	char *ar;
 
 	if (s1 == NULL)
 		s1 = "";
 
 	else
+	{
 		for (i = 0; s1[i] != '\0'; i++)
-	
+
+		i++;
+	}
 
 	if (s2 == NULL)
 		s2 = "";
@@ -31,17 +34,17 @@ char *str_concat(char *s1, char *s2)
 	}
 
 
-	ar = malloc((i + j + 1) * sizeof(char));
+	ar = malloc((i + j) * sizeof(char));
 
 	if (ar == NULL)
 		return (NULL);
 
 	else
 	{
-		for (x = 0; x < i; x++)
+		for (x = 0; x < i - 1; x++)
 			ar[x] = s1[x];
 
-		for (x = 0; x < j; x++)
+		for (x = 0; x < j - 1; x++)
 			ar[x + i] = s2[x];
 
 		ar[j + i] = '\0';
