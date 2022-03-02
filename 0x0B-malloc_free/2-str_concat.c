@@ -10,17 +10,19 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, j, x;
+	unsigned int i = 0, j = 0, x;
 	char *ar;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	else
 		for (i = 0; s1[i] != '\0'; i++)
 	
 
 	if (s2 == NULL)
 		s2 = "";
+
 	else
 	{
 		for (j = 0; s2[j] != '\0'; j++)
