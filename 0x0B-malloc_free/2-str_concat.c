@@ -11,11 +11,12 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, size;
 	char *ar;
 
-	if (str == NULL)
-		return (NULL);
-
-	else
-	{
+/*
+ *	*blank = '\0'
+ *
+ * 	if (s1 == NULL)
+ * 	s1 = blank
+ */
 		for (size = 0; s1[size] != '\0'; size++)
 		
 		for (; s2[size] != '\0'; size++)
@@ -37,5 +38,4 @@ char *str_concat(char *s1, char *s2)
 
 			return (ar);
 		}
-	}
 }
