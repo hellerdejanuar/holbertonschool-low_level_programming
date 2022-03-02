@@ -14,29 +14,26 @@ char *str_concat(char *s1, char *s2)
 	char *ar;
 
 	if (s1 == NULL)
-		s1 = "\0";
+		s1 = "";
+	else
+		for (i = 0; s1[i] != '\0'; i++)
 
 	if (s2 == NULL)
-		s2 = "\0";
-
-	for (i = 0; s1[i] != '\0'; i++)
-	i++;
-
-	for (j = 0; s2[j] != '\0'; j++)
-
-	j++;
+		s2 = "";
+	else
+		for (j = 0; s2[j] != '\0'; j++)
 
 	ar = malloc((i + j + 1) * sizeof(char));
 
 	if (ar == NULL)
+	{
 		return (NULL);
+	}
 
 	else
 	{
 		for (x = 0; x < i; x++)
-		{
 			ar[x] = s1[x];
-		}
 
 		for (x = 0; x < j; x++)
 			ar[x + i] = s2[x];
