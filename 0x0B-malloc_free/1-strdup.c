@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strdup - copies string to newly dinamically allocated array
  * @str: string to be copied
