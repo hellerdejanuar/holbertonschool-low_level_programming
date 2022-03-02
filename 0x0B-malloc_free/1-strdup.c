@@ -11,13 +11,14 @@ char *_strdup(char *str)
 	unsigned int i, size;
 	char *ar;
 
-	if (str == NULL || str[0] == '\0')
+	if (str == NULL)
 		return (NULL);
 
 	else
 	{
 		for (size = 0; str[size] != '\0'; size++)
-			printf("%c", str[size]);
+
+		size++;
 
 		ar = malloc(size * sizeof(char));
 
