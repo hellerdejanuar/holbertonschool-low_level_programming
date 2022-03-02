@@ -5,6 +5,7 @@
  * create_array - creates array using malloc
  * @size: size of array
  * @c: character to init array
+ * Return: pointer to allocated array
  */
 char *create_array(unsigned int size, char c)
 {
