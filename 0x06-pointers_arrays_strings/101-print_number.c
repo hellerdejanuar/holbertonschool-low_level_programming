@@ -25,7 +25,7 @@ void print_number(int n)
 		}
 		else if (n < 0)
 		{
-			n = n * - 1;
+			n = n 1;
 			rvNum = rev(n);
 			_putchar('-');
 			for (rem = rvNum; rem != 0; rem /= 10)
