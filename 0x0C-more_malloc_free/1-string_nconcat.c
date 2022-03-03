@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strins
+ * string_nconcat - concatenates two strins
  * @s1: string 2
  * @s2: string 1
  * @n: number of chars of string 2 to be concatenated
