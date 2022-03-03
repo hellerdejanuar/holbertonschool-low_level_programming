@@ -1,0 +1,57 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * strtow - splits a string into words
+ * @str: string to be splitted
+ * Return: pointer to array of pointers to chars
+ */
+char **strtow(char *str)
+{
+	int **ar;
+	int i = 0, j = 0, x = 0, words, wsize;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == ' ')
+			words++;
+	}
+	words++;
+
+	ar = malloc(words * sizeof(char *)); /* allocates array of words */
+	if (ar == NULL)
+		return (NULL);
+
+	ar[w] = malloc(i * sizeof(char)) /* allocate space equal to remaining of str*/
+
+	for (x = 0; str[x] != '\0'; x++)
+	{
+		if (str[x] == ' ')
+		{
+
+			offset += x;
+			free(ar[w][>>x]) /**/
+
+			w++;
+			x = 0;
+			ar[w] = malloc((i - offset) * sizeof(char))
+		}
+
+		ar[w][x - offset] = str[x];
+	}
+
+
+
+
+
+
+	for (j = 0; j < width; j++)
+	{
+		for (i = 0; i < height; i++)
+		{
+			grid[i][j] = 0;
+		}
+	}
+		return (grid);
+}
+
