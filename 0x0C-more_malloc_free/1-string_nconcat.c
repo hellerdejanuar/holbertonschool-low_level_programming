@@ -4,7 +4,7 @@
  * str_concat - concatenates two strins
  * @s1: string 2
  * @s2: string 1
- *
+ * @n: number of chars of string 2 to be concatenated
  * Return: pointer to concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -18,13 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	do 
-	{
+	do {
 		i++;
 	} while (s1[i - 1]);
 
-	do 
-	{
+	do {
 		j++;
 	} while (s2[j - 1]);
 
