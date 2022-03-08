@@ -27,14 +27,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	(*new_dog).age = age;
 
-	(*new_dog).name = malloc(sizeof(name));
+	(*new_dog).name = malloc(sizeof(name) + 1);
 		if ((*new_dog).name == NULL)
 			return (NULL);
 
 	for (i = 0; name[i]; i++)
 		(*new_dog).name[i] = name[i];
 
-	(*new_dog).owner = malloc(sizeof(owner));
+	(*new_dog).owner = malloc(sizeof(owner) + 1);
 		if ((*new_dog).owner == NULL)
 			return (NULL);
 
