@@ -1,8 +1,15 @@
 #include "dog.h"
 #include <stdio.h>
 
+/**
+ * print_dog - prints the values of the dog instance
+ * @d: pointer to dog instance
+ */
 void print_dog(struct dog *d)
 {
+	if (d == NULL)
+		return;
+
 	if ((*d).name == NULL)
 		(*d).name = "(nil)";
 
