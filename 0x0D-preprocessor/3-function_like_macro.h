@@ -1,4 +1,4 @@
 #ifndef MATH
 #define MATH
-#define ABS(x) ((x) < (0) ? (x * -1) : (x))
+#define ABS(x) ((x) < (0) ? -(x) : (x))
 #endif
