@@ -13,13 +13,12 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
-	if ((argv[2][0] != 37 && argv[2][0] != 47 && argv[2][0] != 43
-		&& argv[2][0] != 45 && argv[2][0] != 42) || argv[2][1] != '\0')
-	/*if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*'
-		&& argv[2][0] != '/' && argv[2][0] != '%') || argv[2][1] != '\0')*/
+
+	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*'
+		&& argv[2][0] != '/' && argv[2][0] != '%') || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
