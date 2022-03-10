@@ -4,12 +4,9 @@
  * get_op_func - selects operation
  *
  * @s: operator symbol
- * @int: int
- * @int: int
  *
  * Return: int
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
