@@ -7,8 +7,6 @@
  * struct op - op
  * @op: op
  * @f: f
- * @a: a
- * @b: b
  */
 
 typedef struct op
