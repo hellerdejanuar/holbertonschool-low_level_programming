@@ -12,6 +12,7 @@ int main (int argc, char *argv[])
 	if (argc != 4)
 		return (-1);
 
+	if 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
