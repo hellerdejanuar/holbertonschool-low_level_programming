@@ -4,8 +4,10 @@
  * main - main
  * @argv: argv
  * @argc: argc
+ *
+ * Return:result
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b;
 

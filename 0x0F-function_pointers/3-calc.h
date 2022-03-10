@@ -4,13 +4,17 @@
 #include <stdio.h>
 
 /**
- * 
+ * struct op - op
+ * @op: op
+ * @f: f
+ * @a: a
+ * @b: b
  */
 
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
+	char *op;
+	int (*f)(int a, int b);
 } op_t;
 
 int op_add(int a, int b);
