@@ -15,12 +15,13 @@ void print_all(const char * const format, ...)
 		{"c", p_char},
 		{"i", p_int},
 		{"f", p_float},
-		{"s", p_str}
+		{"s", p_str},
+		{"/0", NULL}
 	};
 
 	va_start(ap, format);
 
-	while (format[i] != '\0' && format != NULL)
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while (f_sel[j].a_type != NULL)
