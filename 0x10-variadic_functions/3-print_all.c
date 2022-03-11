@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while (i < strlen(format) && format != NULL)
+	while (format[i] != NULL && format != NULL)
 	{
 		j = 0;
 		while (j < 4)
