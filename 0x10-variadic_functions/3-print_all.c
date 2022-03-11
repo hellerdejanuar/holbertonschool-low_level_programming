@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 		{"c", p_char},
 		{"i", p_int},
 		{"f", p_float},
-		{"s", p_str},
+		{"s", p_str}
 	};
 
 	va_start(ap, format);
