@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
-		while (j < 4)
+		while (f_sel[j].a_type != NULL)
 		{
 			if (*f_sel[j].a_type == format[i])
 			{
