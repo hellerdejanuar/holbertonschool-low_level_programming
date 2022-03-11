@@ -10,6 +10,7 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	size_t i = 0;
 	int j = 0;
+	char *sep = "";
 
 	p_sel f_sel[] = {
 		{"c", p_char},
@@ -19,16 +20,17 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-
+	
 	while (i < strlen(format))
 	{
-
+		j = 0;
 		while (j < 4)
 		{
 			if (*f_sel[j].a_type == format[i])
 			{
+				printf("%s", sep);
 				f_sel[j].f(ap);
-				printf(", %d", j);
+				sep = ", ";
 			}
 			j++;
 		}
