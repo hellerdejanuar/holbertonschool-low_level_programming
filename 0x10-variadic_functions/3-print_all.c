@@ -8,8 +8,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i = 0, j = 0;
-	char *format_str;
+	size_t i = 0;
+	int j = 0;
 
 	p_sel f_sel[] = {
 		{"c", p_char},
@@ -19,8 +19,6 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-
-	format_str = (char *)format;
 
 	while (i < strlen(format))
 	{
@@ -57,6 +55,14 @@ void p_float(va_list ap)
 
 void p_str(va_list ap)
 {
-	printf("%s", va_arg(ap, char *));
+	char *str;
+
+	str = va_arg(ap, char *);
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", str);
 }
 
