@@ -1,9 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - prints strings followed by newline
- * @separator: separator
- * @n: number of args
+ * print_all - print various types of args followed by newline
+ * @format: number and type of args
  */
 void print_all(const char * const format, ...)
 {
@@ -20,8 +19,8 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	
-	while (i < strlen(format))
+
+	while (i < strlen(format) && format != NULL)
 	{
 		j = 0;
 		while (j < 4)
@@ -42,22 +41,37 @@ void print_all(const char * const format, ...)
 	va_end(ap);
 }
 
+/**
+ * p_char - print char
+ * @ap: variable args list
+ */
 void p_char(va_list ap)
 {
 	printf("%c", va_arg(ap, int));
 }
 
 
+/**
+ * p_int - print int
+ * @ap: variable args list
+ */
 void p_int(va_list ap)
 {
 	printf("%d", va_arg(ap, int));
 }
-
+/**
+ * p_float - print float
+ * @ap: variable args list
+ */
 void p_float(va_list ap)
 {
 	printf("%f", va_arg(ap, double));
 }
 
+/**
+ * p_str - print string
+ * @ap: variable args list
+ */
 void p_str(va_list ap)
 {
 	char *str;
