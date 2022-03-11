@@ -25,8 +25,11 @@ void print_all(const char * const format, ...)
 
 		while (j < 4)
 		{
-			if (*f_sel[i].a_type == format[i])
-				f_sel[i].f(ap);
+			if (*f_sel[j].a_type == format[i])
+			{
+				f_sel[j].f(ap);
+				printf(", %d", j);
+			}
 			j++;
 		}
 
@@ -45,7 +48,7 @@ void p_char(va_list ap)
 
 void p_int(va_list ap)
 {
-	printf("%i", va_arg(ap, int));
+	printf("%d", va_arg(ap, int));
 }
 
 void p_float(va_list ap)

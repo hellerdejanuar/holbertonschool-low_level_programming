@@ -10,7 +10,10 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 /**
- * print_selector - pair of selector char and function pointer
+ * struct print_selector - pair of selector char and function pointer
+ *
+ * @a_type: arg type
+ * @f: function to be called
  */
 typedef struct print_selector
 {
