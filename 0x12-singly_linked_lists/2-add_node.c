@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
-* print_list - prints all elements of list_t list
-* @head: head with the list
+* add_node - prints all elements of list_t list
+* @head: pointer to first node
 * @str: string with name
-* Return: address 
+*
+* Return: address
 */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -18,5 +19,5 @@ list_t *add_node(list_t **head, const char *str)
 	(*new_node).next = *head;
 	*head = new_node;
 
-	return(new_node);
+	return (new_node);
 }
