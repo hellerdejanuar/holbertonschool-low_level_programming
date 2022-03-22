@@ -8,11 +8,18 @@ void free_list(list_t *head)
 {
 	list_t *aux;
 
-	while (head != NULL)
+	if (head != NULL)
 	{
 		aux = head;
-		head = (*head).next;
-		free(aux);
+
+		while ((*aux).next != NULL)
+		{
+			free((*aux).str);
+			free(aux);
+			aux = (*aux).next;
+		}
+
+		free((*aux).str);
 	}
 
 	free(head);
