@@ -8,7 +8,7 @@ void free_list(list_t *head)
 {
 	list_t *aux;
 
-	while ((*head).next != NULL)
+	while (head != NULL)
 	{
 		aux = head;
 		head = (*head).next;
