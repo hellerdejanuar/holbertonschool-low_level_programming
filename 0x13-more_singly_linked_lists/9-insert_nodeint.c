@@ -34,7 +34,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	last_node = *head;
 
 	/* find idx th node */
-	while (cn < idx)
+	while (cn < idx - 1)
 	{
 		if ((*last_node).next != NULL)
 		{
