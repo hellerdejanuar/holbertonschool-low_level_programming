@@ -3,13 +3,15 @@
 /**
  * pop_listint - deletes the first node and returns its value
  * @head: pointer to the first node
+ * 
+ * Return: popped node data
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *aux;
 	int n;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
 
 	n = (**head).n;
