@@ -7,7 +7,7 @@
  *
  * Return: node. NULL if node noesnt exist
  */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int cn = 0;
 
@@ -17,12 +17,13 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 	while (cn < index)
 	{
 		if ((*head).next != NULL)
+		{
 			head = (*head).next;
 			cn++;
+		}
 		else
 			return (NULL);
 	}
 
-	
 	return (head);
 }
