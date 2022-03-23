@@ -3,7 +3,7 @@
 /**
  * pop_listint - deletes the first node and returns its value
  * @head: pointer to the first node
- * 
+ *
  * Return: popped node data
  */
 int pop_listint(listint_t **head)
