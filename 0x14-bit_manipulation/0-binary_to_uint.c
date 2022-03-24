@@ -35,10 +35,8 @@ unsigned int binary_to_uint(const char *b)
 			result = 1;
 		else
 		{
-			for (n = 0, result = base; n < exp - 1; n++)
-			{
+			for (n = 0, result = 1; n < exp; n++)
 				result = result * base;
-			}
 		}
 
 		sum += (b[pos] - '0') * result;
