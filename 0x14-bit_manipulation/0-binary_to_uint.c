@@ -7,8 +7,9 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	size_t dgts = 0, pos, exp, x;
-	unsigned int sum = 0;
+	int dgts = 0;
+	unsigned int pos, exp, base;
+	unsigned int sum = 0, result, n;
 
 	if (b == NULL)
 		return (0);
@@ -16,26 +17,31 @@ unsigned int binary_to_uint(const char *b)
 	/* digits counter and bin checker*/
 	while (b[dgts] != '\0')
 	{
-		dgts++;
-		if (b[dgts] != 0 && b[dgts] != 1)
+		if (b[dgts] != '0' && b[dgts] != '1')
 			return (0);
+		dgts++;
 	}
 
 	dgts--;
 
 	/* chars iterator */
-	for (pos = 0; dgts > 0; pos++, dgts--)
+	for (pos = 0; dgts >= 0; pos++, dgts--)
 	{
 		/* power */
 		exp = dgts;
-		x = b[pos];
-
-		for (n = 0, result = x; n < exp; n++)
+		base = 2;
+		
+		if (exp == 0)
+			result = 1;
+		else
 		{
-			result = result * x;
+			for (n = 0, result = base; n < exp - 1; n++)
+			{
+				result = result * base;
+			}
 		}
-	
-		sum += result;
+
+		sum += (b[pos] - '0') * result;
 	}
 
 	return (sum);
