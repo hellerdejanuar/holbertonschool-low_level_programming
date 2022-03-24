@@ -30,7 +30,7 @@ unsigned int binary_to_uint(const char *b)
 		/* power */
 		exp = dgts;
 		base = 2;
-		
+
 		if (exp == 0)
 			result = 1;
 		else
