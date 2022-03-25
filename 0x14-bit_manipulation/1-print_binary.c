@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int word_sz = sizeof(n) * 4 - 1;
+	long int word_sz = sizeof(n) * 4 - 1;
 	int flag = 0;
 
 	for (; word_sz >= 0; word_sz--)
