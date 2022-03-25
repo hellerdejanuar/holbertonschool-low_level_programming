@@ -10,14 +10,14 @@ void print_binary(unsigned long int n)
 	int flag = 0;
 
 	for (; word_sz >= 0; word_sz--)
-	{
+	{i
 		/* if comparator & n is not 0 then true */
 		if (1 << word_sz & n)
 		{
-			putchar('1');
+			_putchar('1');
 			flag = 1;
 		}
 		else if (flag || word_sz == 0)
-			putchar('0');
+			_putchar('0');
 	}
 }
