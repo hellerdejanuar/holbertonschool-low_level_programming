@@ -12,7 +12,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 
-	if (fd == -1 || *filename == '\0' || filename == NULL || buffer == NULL)
+	if (fd == -1)
+		return (0);
+	else if (*filename == '\0' || filename == NULL)
+		return (0);
+	else if (buffer == NULL)
 		return (0);
 
 	rd = read(fd, buffer, letters);
