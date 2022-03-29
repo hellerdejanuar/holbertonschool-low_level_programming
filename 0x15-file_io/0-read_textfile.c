@@ -16,11 +16,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	cn = read(fd, buffer, letters);
-	close(fd);
-	
-	if (cn == -1)
-		return (0);
 
+	if (cn == -1)
+		exit (0);
+
+	close(fd);
 
 	cn = write(STDOUT_FILENO, buffer, cn);
 	free(buffer);
