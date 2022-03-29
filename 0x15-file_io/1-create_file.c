@@ -12,7 +12,7 @@ int create_file(const char *filename, char *text_content)
 	if (*filename == '\0' || filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | SIWUSR);
+	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (fd == -1)
 		return (-1);
