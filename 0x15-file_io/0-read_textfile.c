@@ -17,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	rd = read(fd, buffer, letters);
 
-	if (cn == -1)
+	if (rd == -1)
 		return (0);
 
 	close(fd);
