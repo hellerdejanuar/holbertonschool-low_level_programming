@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * create_file - creates a file
+ * append_text_to_file - creates a file
  * @filename: filename
- * @text_content: number of letters to be printed
+ * @text_content: letters to append
  * Return: - 1 failed. 1 success)
  */
 int append_text_to_file(const char *filename, char *text_content)
