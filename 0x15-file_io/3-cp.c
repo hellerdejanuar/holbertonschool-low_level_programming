@@ -5,10 +5,10 @@
  * @text_content: number of letters to be printed
  * Return: - 1 failed. 1 success)
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int fd_src, fd_trg, len = 0;
-	ssize_t wr_stat = 0;
+	int fd_src, fd_trg;
+	ssize_t read_cn = 0, write_cn = 0;
 	char buffer[1024];
 
 	fd_src = open(argv[1], O_RDONLY);
@@ -18,16 +18,19 @@ int main(int argc, char *argv[])
 
 	read_cn = read(fd_src, buffer, 1024);
 
-	if (rd == -1)
-		return (ERROR); /* Read failed */
+	if (read_cn == -1)
+			return (-1); /* Read failed */
 
-	close(fd_src)
-	write_cn = write(fd_trg, buffer, read_cn)
+	close(fd_src);
+	
+	fd_trg = open(argv[2], O_WRONLY | O_CREAT, 0600);
 
-	if (wr_stat != len)
+	write_cn = write(fd_trg, buffer, read_cn);
+
+	if (write_cn != read_cn)
 		return (-1);
 
-	close(fd);
+	close(fd_trg);
 
 	return (1);
 }
