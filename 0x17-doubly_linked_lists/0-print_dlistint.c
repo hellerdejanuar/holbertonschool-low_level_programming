@@ -7,6 +7,7 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	int cn;
+
 	if (!h)
 		return (0);
 
