@@ -8,13 +8,9 @@
  *
  * Return: Always EXIT_SUCCESS.
  */
-int main(int argc, char *argv[])
+int main()
 {
     dlistint_t *head;
-    if (argc =! 1)
-	    index = argv[1];
-    else
-	    index = 1;
 
     head = NULL;
     add_dnodeint_end(&head, 0);
@@ -27,7 +23,7 @@ int main(int argc, char *argv[])
     add_dnodeint_end(&head, 1024);
     print_dlistint(head);
     printf("-----------------\n");
-    insert_dnodeint_at_index(&head, index, 4096);
+    insert_dnodeint_at_index(&head, 8, 4096);
     print_dlistint(head);
     free_dlistint(head);
     head = NULL;
