@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_dnodeint_end - adds elements in a dlistint_t list at the end
+ * get_dnodeint_at_index - gets elements from list at index
  * @head: list
- * @n: value
- * Return: number of nodes
+ * @index: index
+ * Return: element at index
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
@@ -15,7 +15,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 
 	for (cn = 0, c_node = head; c_node->next != NULL; cn++)
-	{	
+	{
 		if (cn == index)
 			break;
 		c_node = c_node->next;
