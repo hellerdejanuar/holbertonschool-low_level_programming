@@ -30,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		if (c_node->prev != NULL) /* not first node */
 			c_node->prev->next = c_node->next;
 		else
-			*head = c_node->next;
+			*head = c_node->next; /* first node */
 
 		if (c_node->next != NULL) /* not last node */
 			c_node->next->prev = c_node->prev;
