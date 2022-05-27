@@ -1,4 +1,4 @@
-#include "hash_table.h"
+#include "hash_tables"
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
