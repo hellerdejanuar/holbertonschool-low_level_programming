@@ -6,7 +6,6 @@
  * @key: key
  * Return: Value, NULL if failed
  */
-
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int idx = 0;
@@ -23,7 +22,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (strcmp(c_node->key, key) == 0)
 		{
-			return (c_node->key);
+			return (c_node->value);
 		}
 		c_node = c_node->next;
 	}
