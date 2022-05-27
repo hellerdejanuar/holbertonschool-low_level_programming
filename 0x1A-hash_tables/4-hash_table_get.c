@@ -9,7 +9,7 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	long unsigned int idx = 0;
+	unsigned long int idx = 0;
 	hash_node_t *c_node = NULL;
 
 	if (!ht || !key)
