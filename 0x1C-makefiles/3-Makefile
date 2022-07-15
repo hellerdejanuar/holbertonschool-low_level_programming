@@ -1,8 +1,8 @@
 # More variables
 
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
+CC=gcc
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o)
 NAME=school
 
 all: $(OBJ)
