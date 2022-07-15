@@ -1,4 +1,7 @@
-# More variables
+# Adding some rules: 
+# clean(clean executable and temp files) 
+# oclean (clean objs) 
+# fclean (both)
 
 CC=gcc
 SRC=main.c school.c

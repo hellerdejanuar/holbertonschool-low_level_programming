@@ -1,4 +1,4 @@
-# This is my first makefile
+# Adding some variables
 
 CC=gcc
 SRC=main.c school.c
